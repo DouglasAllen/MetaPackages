@@ -89,7 +89,6 @@ namespace Microsoft.AspNetCore.Tests
                 var responseText = await response.Content.ReadAsStringAsync();
                 try
                 {
-
                     // Assert UseDeveloperExceptionPage is called in WebHostStartupFilter.
                     Assert.Contains(expected, responseText);
                 }
